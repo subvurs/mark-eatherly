@@ -503,24 +503,23 @@ table { border-collapse: collapse; width: 100%; }
   border-top: 1px solid var(--border-subtle);
 }
 .footer-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  text-align: center;
 }
-.footer-brand {
-  font-family: var(--font-mono);
-  font-size: 0.9rem;
-  font-weight: 600;
+.footer-copy {
+  font-size: 0.85rem;
   color: var(--text-secondary);
 }
-.footer-link {
-  font-size: 0.85rem;
-  color: var(--text-muted);
-}
-.footer-link:hover { color: var(--accent); }
-.footer-copy {
+.footer-powered {
   font-size: 0.8rem;
   color: var(--text-muted);
+  margin-top: 0.5rem;
+}
+.footer-powered a {
+  color: var(--accent);
+}
+.footer-powered a:hover {
+  color: var(--accent-bright);
+  text-decoration: underline;
 }
 
 /* ─── RESPONSIVE ─── */
@@ -558,8 +557,6 @@ table { border-collapse: collapse; width: 100%; }
   .counters-grid { grid-template-columns: repeat(2, 1fr); }
   .infra-grid { grid-template-columns: repeat(3, 1fr); }
   .footer-inner {
-    flex-direction: column;
-    gap: 0.75rem;
     text-align: center;
   }
 }
