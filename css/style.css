@@ -521,6 +521,22 @@ table { border-collapse: collapse; width: 100%; }
   color: var(--accent-bright);
   text-decoration: underline;
 }
+.footer-inner {
+  position: relative;
+}
+.footer-writing {
+  position: absolute;
+  right: 1.5rem;
+  bottom: 0;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  opacity: 0.5;
+}
+.footer-writing:hover {
+  color: var(--text-secondary);
+  opacity: 0.7;
+}
 
 /* ─── RESPONSIVE ─── */
 @media (max-width: 1199px) {
